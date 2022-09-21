@@ -1,9 +1,9 @@
-### Empty Next app
+### Default NextJS project
 
 added:
 
-- tailwind css
-
 - typescript
 
-- framer-motion
+- tailwind css
+
+- framer motion
