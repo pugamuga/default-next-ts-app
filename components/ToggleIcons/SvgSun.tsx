@@ -1,6 +1,6 @@
 import { motion, AnimatePresence } from "framer-motion";
 
-function SvgSun({ toggle: boolean }: any) {
+function SvgSun() {
   return (
     <motion.svg
       initial={{ opacity: 0, rotate: 130 }}

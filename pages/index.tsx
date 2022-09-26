@@ -6,7 +6,7 @@ import SvgIcon from "../components/SvgIcon";
 
 const Home: NextPage = (): JSX.Element => {
   return (
-    <div className="flex min-h-screen  flex-col items-center justify-center py-2 ">
+    <div className="flex min-h-screen bg-violet-100  flex-col items-center justify-center py-2 ">
       <DarkModeToggle />
       <div className=" flex flex-col relative items-center border-y-2 border-y-red-500 py-4">
         <div className=" text-red-500 text-5xl font-kufiM">PugaMuga</div>

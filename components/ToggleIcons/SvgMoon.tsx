@@ -1,12 +1,12 @@
 import { motion, AnimatePresence } from "framer-motion";
 
-function SvgMoon({ toggle: boolean }: any) {
+function SvgMoon() {
   return (
     <motion.svg
       initial={{ opacity: 0, rotate: 130 }}
       animate={{ opacity: 1, rotate: 260 }}
       exit={{ opacity: 0, rotate: 130 }}
-      transition={{type:"spring", stiffness:100}}
+      transition={{ type: "spring", stiffness: 100 }}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
       fill="currentColor"

@@ -1,6 +1,6 @@
 import { motion, AnimatePresence } from "framer-motion";
 
-function StarIcon({ toggle: boolean }: any) {
+function StarIcon() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
