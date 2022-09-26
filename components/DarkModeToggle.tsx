@@ -1,13 +1,14 @@
 import * as React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
-import SvgMoon from "../components/SvgMoon";
-import SvgSun from "../components/SvgSun";
+import StarIcon from "./ToggleIcons/StarIcon";
+import SvgSun from "./ToggleIcons/SvgSun";
+import SvgMoon from "./ToggleIcons/SvgMoon";
 
 export default function DarkModeToggle(): JSX.Element {
   const [toggle, setToggle] = useState<boolean>(false);
   return (
-    <div className="p-10 flex flex-row items-center gap-x-3 bg-slate-500">
+    <div className="p-10 flex flex-row items-center gap-x-3 absolute top-5 right-5">
       <h1
         className={` font-extrabold  ${
           !toggle ? "text-slate-800" : "text-slate-800/20"
@@ -54,8 +55,11 @@ export default function DarkModeToggle(): JSX.Element {
                   exit={{ x: 60, opacity: 0 }}
                   transition={{ duration: 0.1 }}
                 >
-                  <div className="w-[2px] h-[2px] absolute right-[30px] top-[10px] bg-white rounded-full"></div>
-                  <div className="w-[2px] h-[2px] absolute right-[40px] top-[20px] bg-white rounded-full"></div>
+                  <div className="w-[2px] h-[2px] absolute right-[25px] top-[10px] bg-white rounded-full"></div>
+                  <div className=" absolute top-0 right-[35px]">
+                    <StarIcon />
+                  </div>
+                  <div className="w-[2px] h-[2px] absolute right-[40px] top-[18px] bg-white rounded-full"></div>
                 </motion.div>
               </>
             )}
